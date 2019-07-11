@@ -1,0 +1,23 @@
+# This file is part of tilda_wrapper_api.
+# https://github.com/ozeranskiy/tilda_wrapper_api
+
+# Licensed under the MIT license:
+# http://www.opensource.org/licenses/MIT-license
+# Copyright (c) 2019, Sergey Ozeranskiy <sergey.ozeranskiy@gmail.com>
+
+[run]
+branch = True
+source = tilda_wrapper_api
+
+[report]
+exclude_lines =
+    pragma: no cover
+
+# Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
+
+# Don't complain if non-runnable code isn't run:
+    if __name__ == .__main__.:
+
+show_missing = True
