@@ -11,6 +11,7 @@ tox = "*"
 sphinx = "*"
 sphinx_rtd_theme = "*"
 isort = "*"
+bump2version = "*"
 
 [packages]
 requests = "*"

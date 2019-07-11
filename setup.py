@@ -30,6 +30,7 @@ tests_require = [
     'tox',
     'sphinx',
     'sphinx_rtd_theme',
+    'bump2version',
 ]
 
 with io.open('README.md', encoding='utf8') as f:
