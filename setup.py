@@ -18,8 +18,8 @@ from setuptools import find_packages, setup
 from tilda_wrapper_api import __author__, __version__
 
 requires = [
-    'requests>=2.22.0',
-    'dataclasses-json>=0.2.12',
+    'requests',
+    'dataclasses-json',
 ]
 
 tests_require = [
@@ -55,7 +55,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3.7',
     ],
-    packages=find_packages(),
+    packages=find_packages(exclude=('tests',)),
     include_package_data=True,
     install_requires=requires,
     tests_require=tests_require,
