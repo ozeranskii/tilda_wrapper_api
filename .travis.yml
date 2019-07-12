@@ -5,7 +5,13 @@
 # http://www.opensource.org/licenses/MIT-license
 # Copyright (c) 2019, Sergey Ozeranskiy <sergey.ozeranskiy@gmail.com>
 
+dist: xenial
+
 language: python
+
+branches:
+  only:
+    - feature/travis-ci
 
 python:
     - '3.7'
