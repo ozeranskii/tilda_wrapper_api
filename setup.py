@@ -31,6 +31,7 @@ tests_require = [
     'sphinx',
     'sphinx_rtd_theme',
     'bump2version',
+    'python-coveralls',
 ]
 
 with io.open('README.md', encoding='utf8') as f:

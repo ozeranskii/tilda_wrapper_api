@@ -16,6 +16,7 @@ bump2version = "*"
 [packages]
 requests = "*"
 dataclasses-json = "*"
+python-coveralls = "*"
 
 [requires]
 python_version = "3.7"
