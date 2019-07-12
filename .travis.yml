@@ -18,7 +18,7 @@ python:
 
 install:
     # install python requirements
-    - make setup
+    - make init
 
 script:
     # run tests
