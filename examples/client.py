@@ -1,6 +1,3 @@
-# Standard libraries
-import os
-
 # Project
 from tilda_wrapper_api.client import Client
 
@@ -11,8 +8,8 @@ def run() -> None:
     :return:
     """
 
-    # create a client object
-    client = Client(secret=os.getenv('SECRET'), public=os.getenv('PUBLIC'))
+    # create a client object, default value secret=os.getenv('SECRET') and public=os.getenv('PUBLIC')
+    client = Client()
 
     # get list of projects
     projects = client.get_projects_list()

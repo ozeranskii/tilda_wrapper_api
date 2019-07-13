@@ -26,11 +26,13 @@ tests_require = [
     'isort',
     'mock',
     'nose',
+    'requests_mock',
     'coverage',
     'tox',
     'sphinx',
     'sphinx_rtd_theme',
     'bump2version',
+    'python-coveralls',
 ]
 
 with io.open('README.md', encoding='utf8') as f:
