@@ -12,11 +12,12 @@ sphinx = "*"
 sphinx_rtd_theme = "*"
 isort = "*"
 bump2version = "*"
+requests_mock = "*"
+python-coveralls = "*"
 
 [packages]
 requests = "*"
 dataclasses-json = "*"
-python-coveralls = "*"
 
 [requires]
 python_version = "3.7"

@@ -26,6 +26,7 @@ tests_require = [
     'isort',
     'mock',
     'nose',
+    'requests_mock',
     'coverage',
     'tox',
     'sphinx',

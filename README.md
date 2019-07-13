@@ -1,4 +1,4 @@
-![PyPI](https://img.shields.io/pypi/v/tilda-wrapper-api.svg) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tilda-wrapper-api.svg)  ![PyPI - License](https://img.shields.io/pypi/l/tilda-wrapper-api.svg) ![PyPI - Format](https://img.shields.io/pypi/format/tilda-wrapper-api.svg) ![PyPI - Status](https://img.shields.io/pypi/status/tilda-wrapper-api.svg)
+![PyPI](https://img.shields.io/pypi/v/tilda-wrapper-api.svg) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tilda-wrapper-api.svg)  ![PyPI - License](https://img.shields.io/pypi/l/tilda-wrapper-api.svg) ![PyPI - Format](https://img.shields.io/pypi/format/tilda-wrapper-api.svg) ![PyPI - Status](https://img.shields.io/pypi/status/tilda-wrapper-api.svg) [![Coverage Status](https://coveralls.io/repos/github/ozeranskiy/tilda_wrapper_api/badge.svg)](https://coveralls.io/github/ozeranskiy/tilda_wrapper_api)
 
 # Tilda API
 
@@ -31,8 +31,8 @@ import os
 # Project
 from tilda_wrapper_api.client import Client
 
-# create a client object
-client = Client(secret=os.getenv('SECRET'), public=os.getenv('PUBLIC'))
+# create a client object, default value secret=os.getenv('SECRET') and public=os.getenv('PUBLIC')
+client = Client()
 
 # get list of projects
 projects = client.get_projects_list()

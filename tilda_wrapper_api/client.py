@@ -1,4 +1,5 @@
 # Standard libraries
+import os
 from dataclasses import dataclass
 from typing import Dict
 
@@ -17,8 +18,8 @@ class Client:
     Wrapper for Tilda API
     """
 
-    public: str
-    secret: str
+    public: str = os.getenv('PUBLIC')
+    secret: str = os.getenv('SECRET')
     endpoint: str = 'http://api.tildacdn.info/v1'
 
     def _request(self, method: str, params: Dict = None):
