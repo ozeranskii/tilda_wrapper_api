@@ -5,6 +5,8 @@
 # http://www.opensource.org/licenses/MIT-license
 # Copyright (c) 2019, Sergey Ozeranskiy <sergey.ozeranskiy@gmail.com>
 
+dist: xenial
+
 language: python
 
 python:
@@ -12,8 +14,11 @@ python:
 
 install:
     # install python requirements
-    - make setup
+    - make init
 
 script:
     # run tests
     - make test
+
+after_success:
+    - coveralls

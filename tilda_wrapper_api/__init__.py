@@ -9,4 +9,4 @@
 # Copyright (c) 2019, Sergey Ozeranskiy <sergey.ozeranskiy@gmail.com>
 
 __author__ = 'sergey.ozeranskiy@gmail.com'  # NOQA
-__version__ = '0.1.3'  # NOQA
+__version__ = '0.1.4'  # NOQA
