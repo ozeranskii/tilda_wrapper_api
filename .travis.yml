@@ -9,10 +9,6 @@ dist: xenial
 
 language: python
 
-branches:
-  only:
-    - feature/travis-ci
-
 python:
     - '3.7'
 
